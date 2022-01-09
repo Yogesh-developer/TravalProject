@@ -1,0 +1,294 @@
+/* Global logic */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 65.5%;
+}
+
+ul{
+    list-style: none;
+}
+ul a{
+    text-decoration: none;
+    color: white;
+}
+h1{
+    font-size: 2.6rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+button{
+    padding: 1rem 2rem;
+    background-color: #4c6e97;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1.2rem;
+    transition : background 0.5s ease-in-out;
+}
+
+button:hover{
+    background-color:  #131c27;
+}
+/* Nav bar css */
+
+.nav{
+    background-color: #131c27;
+    color: white;
+    position: sticky;
+    top: 0%;
+    z-index: 3;
+}
+nav{
+   display: flex;
+   margin: auto;
+   width: 90%;
+   padding: 1rem;
+   min-height: 10vh;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+nav ul{
+  display: flex;
+  flex: 1 1 40rem; 
+  justify-content: space-around;
+  font-size: 1.5rem;
+}
+
+#logo{
+    flex: 2 1 40rem; 
+    font-size: 2rem;
+    font-family: 'Pattaya', sans-serif;
+}
+
+.Section-1{
+    background : linear-gradient(rgba(0,0,0,0.5),transparent),url('/img/landing-page.jpg');
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Section-1 h3{
+    padding: 2rem;
+}
+/* Location css */
+
+#location{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),transparent),url('/img/new-york-page.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.location-head{
+    width: 90%;
+    margin: auto;
+}
+
+.location-head h3{
+    color: rgb(53, 39, 39);
+    font-weight: bold;
+    padding: 2rem 0rem;
+}
+
+.location-head h2{
+    color: black;
+    font-weight: bolder;
+    text-decoration: underline;
+    padding: 0.5rem 0rem;
+}
+
+/* cloud animation */
+
+.cloud{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    height: 60%;
+    width: 60%;
+}
+.cloud-animation-1{
+    animation: cloudanimation infinite 3s alternate ease-in-out ;
+}
+.cloud-animation-2{
+    top: 20%;
+    z-index: -1;
+    opacity: 0.5;
+    animation: cloudanimation infinite 3.5s alternate ease-in-out ;
+}
+
+@keyframes cloudanimation {
+    from{
+        transform: translate(10%,-10%);
+    }
+    to{
+        transform: translate(0%,0%);
+    }
+}
+
+/* benefits css*/
+
+.benefits{
+    height: 100vh;
+}
+
+.benefits-head{
+    height: 30vh;
+    color: white;
+    background: #131c27;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.benefits-head h3{
+    text-align: center;
+    padding: 2rem;
+}
+.cards{
+    min-height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+}
+.card img{
+    max-width: 15%;
+    margin: 1rem;  
+}
+.card-icon{  
+    background: #131c27;
+}
+
+.card h3{
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.card p{
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+
+.card{
+    text-align: center;
+    height: 45vh;
+    flex: 1 1 20rem;
+    margin: 1rem 2rem;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1), 0px 20px 10px rgba(0,0,0,0.1);
+}
+
+/* Contact css  */
+
+#contact{
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),transparent),url('/img/contact-mountain.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrapper{
+    background: rgba(19,28,39,0.8);
+    width: 40%;
+    border-radius: 20px;
+    color: white;
+}
+
+.form-header{
+    padding: 3rem;
+    text-align: center;
+}
+
+.email-form,.name-form{
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.form-wrapper label{
+    padding: 0rem 2rem;
+}
+
+.form-wrapper button{
+    width: 100%;
+    padding: 1rem;
+    margin-top: 8%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.form-wrapper input{
+    padding: 0.5rem 1rem;
+}
+
+/* footer css */
+footer{
+    background: #131c27;
+    color: white;
+}
+.footer{
+    padding: 2rem;
+    display: flex;
+    width: 90%;
+    min-height: 10vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul{
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer h3{
+    flex: 1 1 40rem;
+}
+/* media query */
+@media screen and (max-width:954px) {
+    html{
+        font-size: 50%;
+    }
+    nav{
+        text-align: center;
+    }
+    #logo{
+        padding: 1rem;
+    }
+    .form-wrapper{
+        width: 80%;
+    }
+    footer{
+        text-align: center;
+    }
+    footer h3{
+        padding: 2rem;
+        font-size: 2rem;
+    }
+}
